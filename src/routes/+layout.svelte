@@ -1,12 +1,10 @@
 <script>
-	import Header from './Header.svelte';
 	import '../app.css';
 
 	let { children } = $props();
 </script>
 
 <div class="app">
-	<Header />
 
 	<main>
 		{@render children()}
@@ -14,7 +12,7 @@
 
 	<footer>
 		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
+			made bij miro matton <a href="https://miromatton.be">have a looksie :)</a>
 		</p>
 	</footer>
 </div>
