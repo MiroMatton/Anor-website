@@ -30,8 +30,8 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
+		max-width: 120rem;
+		margin: 5rem auto;
 		box-sizing: border-box;
 	}
 
