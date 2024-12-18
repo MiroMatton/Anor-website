@@ -3,6 +3,18 @@
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 	import banner from '$lib/images/banner.jpg';
 	import slider from '$lib/images/slider1.png';
+
+	let images = [
+		banner,
+		slider
+  ];
+
+  let currentImageIndex = 0;
+
+  // Change image every 5 seconds
+  const interval = setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }, 5000);
 </script>
 
 <svelte:head>
@@ -16,7 +28,6 @@
 	<section>	
 		<div id="title">
 			<h1>Gite de la Neuve Forge</h1>
-			<p>anor, frankrijk</p>
 		</div>
 		<div id="aboutUs">
 			<h2>Over ons</h2>
@@ -33,7 +44,7 @@
 
 	<section>
 		<div id="slider">
-			<img src={slider} alt="sfeer foto's van anor" >
+			<img src={images[currentImageIndex]} alt="sfeer foto's van anor" >
 		</div>
 		<div id="sideBar">
 			<div id="info">
@@ -69,7 +80,8 @@
 	section {
 		display: flex;
 		flex: 1;
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
+		min-height: 30vh
 	}
 
 	#title, #aboutUs, #revieuws, #info {
@@ -82,7 +94,7 @@
 
 	#banner {
 		border-radius: 30px;
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 	}
 
 	#title {
@@ -105,8 +117,9 @@
 	}
 
 	#slider img { 
+		height: 40rem;
 		width: 100%;
-		height: 100%;
+		border-radius: 30px;
 	}
 
 	#sideBar {
