@@ -6,7 +6,7 @@
 <div id="contact">
   <h3>Interesse of meer vragen over de gite, contacteer ons zeker</h3>
   <div id="cta">
-    <div class="button">
+    <div class="button margin-rigth">
       <a href="https://forms.gle/b1AZe5dRqyMp43vh6">Contacteer ons</a>
     </div>
     <div class="button">
@@ -22,13 +22,12 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-left: 2rem;
     padding: 3rem;
     border-radius: var(--borderRadius);
     background-color: var(--pink);
     color: var(--purple);
     font-family: Fraunces;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #cta {
@@ -40,7 +39,7 @@
 
   .button {
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; 
     color: white;
     background-color: var(--purple);
     font-weight: 600;
@@ -58,11 +57,16 @@
       width: 100%;
       height: 100%;
       font-size: 2rem;
+      text-wrap: nowrap;
 
       img {
         width: 15rem;
         height: auto;
       }
     }
+  }
+
+  .margin-rigth { 
+    margin-right: 2rem;
   }
 </style>

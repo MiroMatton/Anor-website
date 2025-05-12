@@ -2,8 +2,8 @@
   //imports
 
   //images
-  import lakeVieuw from "$lib/images/lakeVieuw.jpg";
   import house from "$lib/images/house.jpg";
+  import anor from "$lib/images/anorTest.jpg";
 
   //components
   import Reviews from "$lib/components/reviews.svelte";
@@ -14,16 +14,16 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Gite de la Neuve Forge | Anor</title>
   <meta name="description" content="Gite de la Neuve Forge" />
 </svelte:head>
 
-<Header image={house} />
+<Header image={anor} />
 <Reviews />
 
-<section>
-  <Banner image={lakeVieuw} alt={"foto huis la neuve forge"} />
-  <div>
+<section class="section-wrapper">
+  <Banner image={house} alt={"foto huis la neuve forge"} />
+  <div class="twoDiv">
     <Gallery />
     <Contact />
   </div>
@@ -48,9 +48,9 @@
       margin-top: 2rem;
     }
   }
-
-  #revieuws {
-    background-color: var(--blue);
-    flex: 2;
+  
+  .twoDiv {
+    display: flex;
+    gap: var(--gap)
   }
 </style>

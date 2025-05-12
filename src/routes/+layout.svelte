@@ -21,17 +21,14 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
   }
 
   main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 5rem;
     box-sizing: border-box;
   }
-
   footer {
     display: flex;
     flex-direction: column;
@@ -42,6 +39,14 @@
 
   footer a {
     font-weight: bold;
+  }
+
+  :global(.section-wrapper) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 480px) {

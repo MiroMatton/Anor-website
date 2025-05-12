@@ -42,7 +42,7 @@
   ];
 </script>
 
-<section>
+<div>
   {#each reviews as review}
     <p id="scroll-text">
       <span>{review.name}</span>
@@ -50,7 +50,7 @@
       {review.review}
     </p>
   {/each}
-</section>
+</div>
 
 <style lang="scss">
   #scroll-text {
@@ -72,11 +72,11 @@
     }
   }
 
-  section {
+  div {
     position: relative;
-    left: -5rem;
     width: 100vw;
-    margin-bottom: 3rem;
+    margin-top: var(--gap);
+    margin-bottom: 5rem;
     background-color: var(--blue);
     display: flex;
     justify-content: space-around;
