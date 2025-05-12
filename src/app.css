@@ -13,63 +13,25 @@
 	--blue: #c0e5fa;
 	--pink: #FFB2E6;
 
+	--gap: 2rem;
 	--borderRadius: 2rem;
 	font-family: var(--font-body);
 }
 
 body {
-	min-height: 100vh;
 	margin: 0;
 	background-color: var(--backgroundColor);
 }
 
-h1,
-h2{
-	font-weight: 600;
-	font-size: 8rem;
-}
-
-p {
-	line-height: 1.5;
-}
-
-h2 {
-	font-size: 1rem;
-}
-
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
+:global(.section-wrapper) {
+	padding: 0 5rem;
+	max-width: 120rem;
 	margin: 0 auto;
-}
+  }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-}
-
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
-}
+@media (max-width: 768px) {
+    section {
+      flex-direction: column;
+	  justify-content: flex-end	 /* Stack banner and info vertically */
+    }
+  }
