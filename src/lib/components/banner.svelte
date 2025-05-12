@@ -3,10 +3,10 @@
   export let image;
 </script>
 
-<img src={image} {alt} id="banner" />
+<img src={image} {alt} class="banner" />
 
 <style lang="scss">
-  #banner {
+  .banner {
     border-radius: var(--borderRadius);
   }
 </style>
